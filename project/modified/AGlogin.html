@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="AGlogin.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+  
+</head>
+
+<body>
+
+
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="signup.php" method="POST" id="form" enctype="multipart/form-data">
+			<h1>Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" name="name" required="required"/>
+			<input type="text" placeholder="User Name" name="uname" required="required"/>
+			<input autocomplete="off" type="email" placeholder="Email" name="email" required="required"/>
+			<input type="password" placeholder="Password" name="password" required="reqired"/>
+			<select name="type" >
+				<option value="Choose">Choose</option>
+				<option value="Farmer" name="farmer">Farmer</option>
+				<option value="customer" name="customer">Customer</option>
+			</select>
+			<button type="submit" >Sign Up</button>
+		</form>
+		
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="login.php" method="post" id="form" enctype="multipart/form-data">
+			<h1>Log in</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your account</span>
+			<input type="text" placeholder="User Name" name="uname" required="required"/>
+			<input type="password" autocomplete="off" placeholder="Password" name="pwd" required="required"/>
+			<select name="type">
+				<option value="Choose">Choose</option>
+				<option value="Farmer" name="farmer">Farmer</option>
+				<option value="customer" name="customer">Customer</option>
+			</select>
+			<a href="#">Forgot your password?</a>
+			<button>Log In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal details</p>
+				<button class="ghost" id="signIn">Log In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hi There!</h1>
+				<p>Enter your personal details to open an account with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script charset="utf-8">
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+</script>
+</body>
+
+</html>

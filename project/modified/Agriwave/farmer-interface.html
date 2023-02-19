@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Farmer Interface</title>
+        <link rel="stylesheet" href="bootstrap.css">
+        <script src="bootstrap.bundle.js"></script>
+        <link rel="stylesheet" href="farmer-interface.css">
+        <script src="jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#section1,#section-2').hide();
+                $('#sale').click(function(){
+                    $('#car,#section1').hide();
+                    $('#section-2').show('slow');
+                    $('#sale').css('color','grey');
+                    $('#home').css('color','lightgray');
+                    $('#info').css('color','lightgray');
+                })
+                $('#home').click(function(){
+                    $('#section1,#section-2').hide();
+
+                    $('#car').show('slow');
+                    $('#home').css('color','grey');
+                    $('#sale').css('color','lightgray');
+                    $('#info').css('color','lightgray');
+                })
+                $('#info').click(function(){
+                    $('#car,#section-2').hide();
+
+                    $('#section1').show('slow');
+                    $('#info').css('color','grey');
+                    $('#home').css('color','lightgray');
+                    $('#sale').css('color','lightgray');
+                })
+                $('button').click(function(){
+                    var id=$(this).attr('name');
+                    var dir=document.getElementById(id);
+                    var imgname=dir.getElementsByTagName('img')[0].src;
+                    //$('#test').text(imgname);
+                    var itemname=dir.getElementsByTagName('h4')[0].innerText;
+                    //$('#test2').text(itemname);
+                    document.cookie='img='+imgname;
+                    document.cookie='itemname='+itemname;
+                    window.location.href="live-sale.php";
+                    $('#test2').text(ca);
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div class="container-fluid lg" id="c">
+            <div class="row" >
+                <nav class="navbar fixed-top navbar-expand-lg " id="navigation">
+                    <!--div class="container-fluid"-->
+                      <a class="navbar-brand" href="#" id="brand">
+                        <img src="logo.png" alt="logo" width="80px" height="60px" id="logo">
+                        <span id="title">Agri Wave</span>
+                      </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="nav-items">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" id="home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#" id="sale">SELL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="info">USEFUL INFORMATION</a>
+                        </li>
+			<li class="nav-item">
+                            <a class="nav-link" href="../home1.html" id="info">Log Out</a>
+                        </li>
+                    </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row" id="car">
+            <div class="container" id="carousel">
+            <div class="carousel slide" id="slider" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#slider" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#slider" data-bs-slide-to="1"></li>
+                </ol>     
+                <div class="carousel-inner" id="c-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="carousel/img1.jpeg" alt="" id="c-img" width="100px" >
+                        <div class="carousel-caption d-none d-md-block" id="caption1">
+                            <h1>First slide label</h1>
+                            <h3>Some representative placeholder content for the first slide.</h3>
+                        </div>
+                    
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="carousel/img3.jpg" alt="" id="c-img" >
+                        <div class="carousel-caption d-none d-md-block" id="caption2">
+                            <h1>First slide label</h1>
+                            <h3>Some representative placeholder content for the first slide.</h3>
+                        </div>
+                    </div>
+                </div>
+                <a href="#slider" class="carousel-control-prev" data-bs-slide="prev">
+                    Prev<span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#slider" class="carousel-control-next" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>Next
+                </a>             
+            </div>
+            </div>
+    </div>
+        
+        <section id="section-2">
+            <h2><u>Products to Sale</u></h2>
+            <div class="row" id="row-2">
+                <div class="col-3">
+                    <div class="card" id="card1">
+                        <img src="vegetables-pics/tomato.jpeg" alt="">
+                        <div class="card-body">
+                            <h4 id="name">Tomato</h4><span><button class="btn" name="card1">Start Sale</button></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" id="card2">
+                            <img src="vegetables-pics/mirchi.webp" alt="">
+                            <div class="card-body">
+                                <h4 id="name">Green Chilli</h4><span><button class="btn" name="card2">Start Sale</button></span>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" id="card3">
+                            <img src="vegetables-pics/onion.jpeg" alt="">
+                            <div class="card-body">
+                                <h4 id="name">Onion</h4><span><button class="btn" name="card3">Start Sale</button></span>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" id="card4">
+                            <img src="vegetables-pics/potato.jpeg" alt="">
+                            <div class="card-body">
+                                <h4 id="name">Potato</h4><span><button class="btn" name="card4">Start Sale</button></span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="row-3">
+                <div class="col-3">
+                    <div class="card" id="card5">
+                        <img src="vegetables-pics/cabbage.jpeg" alt="hello">
+                        <div class="card-body">
+                            <h4 id="name">Cabbage</h4><span><button class="btn" name="card5">Start Sale</button></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" id="card6">
+                            <img src="vegetables-pics/brinjal.webp" alt="">
+                            <div class="card-body">
+                                <h4 id="name">Brinjal</h4><span><button class="btn" name="card6">Start Sale</button></span>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" id="card7">
+                            <img src="vegetables-pics/lady-finger.jpg" alt="">
+                            <div class="card-body">
+                                <h4 id="name">Lady's Finger</h4><span><button class="btn" name="card7">Start Sale</button></span>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" id="card8">
+                        <img src="vegetables-pics/cauli.webp" alt="">
+                        <div class="card-body">
+                            <h4 id="name">Cauli Flower</h4><span><button class="btn" name="card8">Start Sale</button></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="row-3">
+                <div class="col-3">
+                    <div class="card" id="card9">
+                        <img src="vegetables-pics/beans.jpg" alt="hello">
+                        <div class="card-body">
+                            <h4 id="name">Beans</h4><span><button class="btn" name="card9">Start Sale</button></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" id="card10">
+                        <img src="vegetables-pics/carrot.jpg" alt="">
+                        <div class="card-body">
+                            <h4 id="name">Carrot</h4><span><button class="btn" name="card10">Start Sale</button></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" id="card11">
+                            <img src="vegetables-pics/leafy.jpeg" alt="">
+                            <div class="card-body">
+                                <h4 id="name">Veg Leafs</h4><span><button class="btn" name="card11">Start Sale</button></span>
+                                </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" id="card12">
+                            <img src="vegetables-pics/raddish.webp" alt="">
+                            <div class="card-body" id="body">
+                                <h4 id="name">Raddish</h4><span><button class="btn" name="card12">Start Sale</button></span>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="section1">
+            <h2 id="section1-head"><u>Useful Information</u></h2>
+            <div class="row" id="row-2">
+                <!--div class="col-3">
+                    <div class="card" id="card">
+                        <img src="tempr.jpg" alt="">
+                        <h4 id="temp">Temperature:</h4>
+                    </div>
+                </div-->
+                <div class="col-4">
+                    <div class="card" id="card">
+                            <img src="market-price.jpg" alt="">
+                            <a class="btn btn-primary my-3" href="marketprices.html">Market Price List</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" id="card">
+                            <img src="farmtech.webp" alt="">
+                            <a class="btn btn-primary my-3" href="farmtech.html">Farming Technology</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" id="card">
+                            <img src="events.jpg" alt="">
+                            <a class="btn btn-primary my-3" href="#">Events</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <span id="test"></span>
+        <span id="test2"></span>
+        <footer id="footer">
+            <div class="outer-footer">
+                Copyright AgriWave pro.All Rights Reserved
+            </div>
+            
+        </footer>
+        
+    </body>
+</html>

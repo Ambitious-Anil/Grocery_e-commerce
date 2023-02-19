@@ -1,0 +1,124 @@
+body{
+    background:url('back.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#navigation{
+    height:80px;
+    border-radius:0px;
+    background-color:rgb(82, 87, 82);
+    margin-bottom: 50px;
+}
+#title{
+    color:#f8f8f8;
+    font-size: 35px;
+    margin-left: 10px;  
+    font-weight: 600;
+    font-family:sans-serif;
+}
+#logo{
+    margin-left:50px;
+}
+#nav-items a{
+    font-size:25px;
+    margin-left:50px;
+    font-weight:400;
+    color:lightgray;
+}
+#profile{
+    color:aliceblue;
+    margin-right:30px;
+}
+#c-inner{
+    border:solid 2px rgb(60, 97, 60);
+    width:100%;
+}
+#slider{
+    width: 100%;
+    align: left;
+}
+#c-img{
+    width:100%;
+    height:600px;
+}
+#carousel{
+    margin-top: 80px;
+    width:100%;
+    height:100%;
+}
+#caption1{
+    text-align: left;
+}
+#section1{
+    border-radius: 20px;
+    background-color: transparent;
+    height:370px;
+    margin-top:80px;
+}
+#section1-head,h2{
+    color:rgb(20, 87, 29);
+    padding:5px;
+    font-weight:600;
+    text-align: center;
+}
+#section1 .col-4{
+    padding: 40px;
+}
+#section1 #card{
+    height:270px;
+    background-color:transparent;
+    border:0px;
+}
+#section1 img{
+    padding:5px;
+    width:250px;
+    height:180px;
+    align-self: center;
+    justify-items:center;
+    border-radius: 10px;
+}
+
+#section-2{
+    width:97%;
+    margin-left:20px;
+    border-radius: 10px;
+    background-color: transparent;
+    margin-top:90px;
+}
+#section-2 h2{
+    color:white;
+}
+#section-2 .col-3{
+    padding:10px;
+}
+#section-2 .card{
+    background-color:transparent;
+    height:300px;
+    border:0px;
+}
+#section-2 img{
+    padding:5px;
+    width:250px;
+    height:180px;
+    align-self: center;
+    justify-items:center;
+    border-radius: 30px;
+}
+#section-2 .card-body{
+    align-self: center;
+    justify-items:center;
+}
+#section-2 .btn{
+    background-color:#4285F4;
+}
+#section-2 .row{
+    padding:30px;
+}
+.outer-footer{
+    padding:15px;
+    text-align:center;
+    color:white;
+    font-size:18px;
+    background-color:black;
+    margin-top:100px;
+}

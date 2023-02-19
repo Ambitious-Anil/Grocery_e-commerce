@@ -1,0 +1,355 @@
+*{
+    padding:0 ;
+    margin:0;
+    font-family:Arial;
+}
+nav{
+	position: fixed;
+	left:0;
+	height: 70px;
+   	width:100%;
+	padding:10px 90px;
+	box-sizing: border-box;
+	background:#6EF33A;
+	border-bottom:1px solid #fff; 
+}
+nav .nav-brand{
+	padding:22px 20px;
+	height:100px;
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color:#fff;
+}
+nav ul{
+	list-style: none;
+	float: right;
+	margin: 0;
+	padding: 10px 12px;
+	display: flex;
+}
+nav ul li{
+	line-height: 40px;
+	
+	text-decoration: none ;
+	font-size:20px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#nav-col{
+	color:#B43504;
+}
+nav ul li a:hover{
+	background: rgba(249, 86, 58,0.5);
+	border-radius: 10px;
+}
+nav ul li a{
+	line-height: 40px;
+	color:#F780C2;
+	padding: 12px 20px;
+	text-decoration: none ;
+	font-size:20px;
+	text-align: center;
+
+}
+.navbar-nav .btn a:hover{
+	background: rgba(253, 138, 202,0.5);
+	border-radius: 10px;
+}
+.content{
+	line-height: 40px;
+	color:#D1071E;
+	padding: 12px 20px;
+	text-decoration: none ;
+	font-size:40px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.content .btn{
+	background-color:  #33ff33;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-weight: bold;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+	border-radius:10px;
+}
+
+
+.main{
+	width:100%;
+	height:100vh;
+	background: url(aj5.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+#vision .section{
+	width: 100%;
+	min-height: 70vh;
+	background:url(gr1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.container{
+	width: 80%;
+	display: block;
+	margin: auto;
+	padding-top: 80px;
+}
+.content-section{
+	float: left;
+	width: 60%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	border-radius:30px;
+}
+.content-section .title{
+	text-transform: uppercase;
+	color:#a52a2a;
+	font-weight: bolder;
+	font-size: 28px;
+}
+.content-section .content h3{
+	margin-top: 8px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	color: black;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+	border-radius:10px;
+}
+.content-section .content .button a:hover{
+	background-color: #40FD04;
+	
+	color:#fff;
+}
+
+#mission .sec{
+	width: 100%;
+	min-height: 100vh;
+	background:url(gr.jpg);
+	background-size: cover;
+	background-position: center;
+
+}
+.cont{
+	width: 80%;
+	display: block;
+	margin: auto;
+	padding-top: 100px;
+}
+.cont-sec{
+	float: right;
+	width: 55%;
+}
+.image-section{
+	float: left;
+	width: 40%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+.cont-sec .tit{
+	text-transform: uppercase;
+	color:#a52a2a;
+	font-weight: bold;
+	font-size: 28px;
+}
+.cont-sec .con h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.cont-sec .con p{
+	margin-top: 7px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.cont-sec .con .btn{
+	margin-top: 30px;
+}
+.cont-sec .con .btn a{
+	text-transform: uppercase;
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	border-radius:10px;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+.cont-sec .con .btn a:hover{
+	background-color: #40FD04;
+	color:#fff;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #5FECE0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+#aboutus #wrapper{
+  background: url(gr3.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 10%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#aboutus #wrapper h1{
+  font-family: 'Allura', cursive;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #81c644;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+
+.inner-footer{
+	padding:0 ;
+	margin:0;
+	background-color:#24262b;
+}
+.social-links{
+	display: flex;
+}
+.social-links ul{
+	padding: 10px;
+	display: flex;
+	width:300px;
+	height: 30px;
+	margin: auto;
+}
+.social-items{
+	list-style: none;
+}
+.social-items a{
+	padding:10px 20px;
+	font-size: 35px;
+	color:#40FD04;
+	
+}
+.quick-links{
+	display: flex;
+	width:600px;
+	height: 70px;
+	margin: auto;
+}
+.quick-links ul{
+	display: flex;
+}
+.quick-items{
+	list-style: none;
+}
+.quick-items a{
+	text-decoration: none;
+	padding:0px 8px;
+	font-size: 18px;
+	color: white;
+	transition: all .25s ;
+}
+.quick-items a:hover{
+	color: #00ff00;
+}
+.outer-footer{
+	padding: 15px;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	background-color: #41544B;
+
+}

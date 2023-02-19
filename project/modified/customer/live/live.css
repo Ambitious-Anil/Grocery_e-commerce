@@ -1,0 +1,18 @@
+video{
+    margin-top: 70px;
+    height:100%;
+    width:100%;
+}
+.row-fluid{
+    display:flex;
+}
+button{
+    color: black;
+    justify-content: center;
+    margin-top:300px;
+    margin-left: 50px;
+    width:80%;
+    height:35px;
+    background-color: rgb(43, 226, 67);
+    border-radius: 5px;
+}
